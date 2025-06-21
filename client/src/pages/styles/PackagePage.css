@@ -1,0 +1,144 @@
+/* Professional Package Page Styles */
+
+.package-hero {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  background: #f8fafc;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+
+.package-hero .swiper-slide {
+  height: 340px;
+}
+
+.package-hero .swiper-slide > div {
+  height: 100%;
+  border-radius: 1.5rem;
+}
+
+.package-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.package-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.package-price {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #059669;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.package-price .discount {
+  background: #059669;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.7rem;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.package-meta {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.1rem;
+  color: #475569;
+  align-items: center;
+}
+
+.package-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.package-detail-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 1.2rem 1.5rem;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.package-detail-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 0.5rem;
+}
+
+.package-detail-card p {
+  color: #64748b;
+  font-size: 1rem;
+}
+
+.package-description {
+  font-size: 1.1rem;
+  color: #334155;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.sticky-book-btn {
+  position: sticky;
+  bottom: 1.5rem;
+  z-index: 50;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sticky-book-btn button {
+  background: linear-gradient(90deg, #059669 60%, #10b981 100%);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.9rem 2.5rem;
+  box-shadow: 0 4px 16px rgba(16,185,129,0.12);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+  cursor: pointer;
+}
+
+.sticky-book-btn button:hover {
+  background: linear-gradient(90deg, #10b981 60%, #059669 100%);
+  box-shadow: 0 8px 32px rgba(16,185,129,0.18);
+  transform: translateY(-2px) scale(1.03);
+}
+
+@media (max-width: 600px) {
+  .package-hero, .package-hero .swiper-slide {
+    height: 200px;
+  }
+  .package-summary {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .sticky-book-btn button {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+  }
+}

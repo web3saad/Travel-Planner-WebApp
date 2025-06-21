@@ -1,0 +1,103 @@
+/* AuthForm.css - Modern, professional styles for Login & Signup */
+
+.auth-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-glass {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 2.5rem 2rem;
+  width: 350px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fadeIn 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.auth-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #22223b;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.auth-label {
+  font-weight: 600;
+  color: #22223b;
+  margin-bottom: 0.2rem;
+}
+
+.auth-input, .auth-textarea {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1.5px solid #bfc0c0;
+  background: rgba(255,255,255,0.7);
+  font-size: 1rem;
+  color: #22223b;
+  outline: none;
+  transition: border 0.2s;
+}
+.auth-input:focus, .auth-textarea:focus {
+  border: 1.5px solid #3a86ff;
+}
+
+.auth-link {
+  color: #3a86ff;
+  font-size: 0.98rem;
+  text-align: right;
+  text-decoration: none;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s;
+}
+.auth-link:hover {
+  color: #22223b;
+  text-decoration: underline;
+}
+
+.auth-btn {
+  background: linear-gradient(90deg, #3a86ff 0%, #4361ee 100%);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.85rem 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(58,134,255,0.08);
+}
+.auth-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.auth-btn:hover {
+  background: linear-gradient(90deg, #4361ee 0%, #3a86ff 100%);
+}
+
+.auth-error {
+  color: #e63946;
+  font-size: 0.98rem;
+  text-align: center;
+  margin-top: -0.5rem;
+}
